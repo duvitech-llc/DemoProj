@@ -28,6 +28,8 @@ TrueTypeFonts - ( )
 
 #include "GUI.h"
 #include "DisplayThread.h"
+#include "FirstpersonDataStructures.h"
+#include <stdbool.h>
 
 /*********************************************************************
 *
@@ -39,6 +41,9 @@ TrueTypeFonts - ( )
 // Recommended memory to run the sample with adequate performance
 //
 #define RECOMMENDED_MEMORY (1024L * 5)
+static bool bRunning = false;
+
+static bool Initialize(void);
 
 /*********************************************************************
 *
@@ -51,16 +56,30 @@ TrueTypeFonts - ( )
 *       MainTask
 */
 void MainTask(void) {
+
+	bRunning = Initialize();
+	
+	GUI_DispString("Hello world!");
+	
+	while (bRunning){
+
+		
+	}
+}
+
+static bool Initialize(void){
+
 	GUI_Init();
+
 	//
 	// Check if recommended memory for the sample is available
 	//
 	if (GUI_ALLOC_GetNumFreeBytes() < RECOMMENDED_MEMORY) {
 		GUI_ErrorOut("Not enough memory available.");
-		return;
+		return false;
 	}
-	GUI_DispString("Hello world!");
-	while (1);
+
+	return true;
 }
 
 /*************************** End of file ****************************/

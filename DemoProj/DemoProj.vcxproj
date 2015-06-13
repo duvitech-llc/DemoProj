@@ -20,6 +20,7 @@
   <ItemGroup>
     <ClInclude Include="Config\GUIConf.h" />
     <ClInclude Include="Config\LCDConf.h" />
+    <ClInclude Include="Duvitech\Games\Include\FirstpersonDataStructures.h" />
     <ClInclude Include="GUI\Include\BUTTON.h" />
     <ClInclude Include="GUI\Include\BUTTON_Private.h" />
     <ClInclude Include="GUI\Include\CALENDAR.h" />
@@ -141,8 +142,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>D:\Users\George\Documents\Visual Studio 2013\Projects\DemoProj\DemoProj\Simulation;D:\Users\George\Documents\Visual Studio 2013\Projects\DemoProj\DemoProj\Config;D:\Users\George\Documents\Visual Studio 2013\Projects\DemoProj\DemoProj\GUI\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Users\George\Documents\Visual Studio 2013\Projects\DemoProj\DemoProj\Simulation;D:\Users\George\Documents\Visual Studio 2013\Projects\DemoProj\DemoProj\GUI\Library;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)\Duvitech\Games\Include;$(ProjectDir)\Simulation;$(ProjectDir)\Config;$(ProjectDir)\GUI\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\Simulation;$(ProjectDir)\GUI\Library;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

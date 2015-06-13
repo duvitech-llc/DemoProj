@@ -27,7 +27,7 @@ Purpose     : Configuration of available features and default values
 *
 *       Multi layer/display support
 */
-#define GUI_NUM_LAYERS      16   // Maximum number of available layers
+#define GUI_NUM_LAYERS      2   // Maximum number of available layers
 
 /*********************************************************************
 *

@@ -27,6 +27,18 @@
     <Filter Include="Application">
       <UniqueIdentifier>{bf61b706-b4a6-4b88-b5e3-4f863e42b0a3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Duvitech">
+      <UniqueIdentifier>{174c9cb5-0487-4bea-a06d-81b0014f5beb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Duvitech\Games">
+      <UniqueIdentifier>{8fb16754-8c53-4dc1-9b9a-7acafb6255a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Duvitech\Games\Include">
+      <UniqueIdentifier>{11ea6132-8c4f-4866-8604-3af0ed5ea835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Duvitech\Games\Source">
+      <UniqueIdentifier>{12aa11cb-8f13-4b98-b887-83ff7c62fd83}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp">
@@ -300,6 +312,9 @@
     </ClInclude>
     <ClInclude Include="Config\LCDConf.h">
       <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Duvitech\Games\Include\FirstpersonDataStructures.h">
+      <Filter>Duvitech\Games\Include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
