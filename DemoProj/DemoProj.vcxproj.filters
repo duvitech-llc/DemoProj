@@ -56,6 +56,9 @@
     <ClCompile Include="DisplayThread.c">
       <Filter>Application</Filter>
     </ClCompile>
+    <ClCompile Include="nuke.c">
+      <Filter>Application</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GUI\Include\BUTTON.h">
